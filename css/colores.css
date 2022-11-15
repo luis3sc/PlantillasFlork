@@ -1,0 +1,36 @@
+:root{
+    --amarillo: #ffd101;
+    --marron: #1f0c12;
+    --fondoblanco: #ffffff;
+    --grismd: #c2c2c2;
+    --grisgr: #818181;
+    --fondonegro: #000000;
+    --colorsecundariobajo:#ffe6e1;
+    --btnrojo:  #e40001;    
+}
+/* fondo */
+.bblanco{
+    background-color: var(--fondoblanco);
+}
+.bnegro{
+    background-color: var(--fondonegro);
+}
+.bgrismd{
+    background-color: var(--grismd);
+}
+.brojo{
+    background-color: var(--btnrojo);
+}
+/* color fuente */
+.cblanco{
+    color: var(--fondoblanco);
+}
+.cnegro{
+    color: var(--fondonegro);
+}
+.cgrismd{
+    color: var(--grismd);
+}
+.crojo{
+    color: var(--btnrojo);
+}

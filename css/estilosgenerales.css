@@ -1,0 +1,271 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding:0px;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+/*  TITULARES  */
+a{
+  text-decoration: none;
+  color: var(--fondonegro);
+}
+h1{
+    font-size: 2.9em;
+}
+h2{
+  font-size: 2.8em;
+}
+h3{
+    font-size: 1,2em;
+}
+h4{
+    font-size: 1em;
+}
+/** **/
+.tac{
+    text-align: center;
+}
+.bold{
+    font-weight: 800;
+}
+.mayusc{
+    text-transform: uppercase;
+}
+.ln1{
+    line-height: 1;
+}
+/** Margenes **/
+.mg-auto{
+  margin: auto;
+}
+.mgtp0-5{
+  margin-top: 0.5em;
+}
+.mgtp-1{
+  margin-top: 1em;
+}
+.mgtp-2{
+  margin-top: 2em;
+}
+/** Margenes **/
+/** overflow **/
+.over{
+  overflow: auto;
+}
+.sinover{
+  overflow: hidden;
+}
+.sinoverx{
+  overflow-x: hidden;
+}
+.sinovery{
+    overflow-y: hidden;
+}
+.overx{
+  overflow-x: scroll;
+}
+.overy{
+  overflow-y: scroll;
+}
+/** overflow **/
+/** Padding **/
+.padding1{
+  padding: 1em;
+}
+.pd-h{
+  padding: 1em 0em;
+}
+.pdvert1{
+  padding: 1em 0em;
+}
+.pdvert2{
+  padding: 2em 0em;
+}
+.pdvert3{
+  padding: 3em 0em;
+}
+.padhor1{
+  padding: 0 1em;
+}
+/** Paddings */
+/** Positions **/
+.abs{
+  position: absolute;
+}
+.rel{
+  position: relative;
+}
+.inh{
+  position: inherit;
+}
+/** Positions **/
+/** z-index  **/
+.zind{
+    z-index: 1;
+}
+.zind0{
+    z-index: 0;
+}
+.zind2{
+    z-index: 2;
+}
+/** z-index **/
+/** flex **/
+.flex, .flex-centro-centro, .flx-horizont-centro, .flex-columna, .flex-fila, .flex-vertical-centro, .flex-wrap{
+  display: flex;
+}
+.flex-centro-centro{
+  justify-content: center;
+  align-items: center;
+}
+.flx-vertical-centro{
+justify-content: center;
+}
+.flex-columna{
+flex-direction: column;
+}
+.flex-fila{
+flex-direction: row;
+}
+.flex-horizont-centro{
+align-items: center;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex-spc-around{
+  justify-content: space-around;
+}
+/** flex **/
+/** grid **/
+.row6, .row2, .row-3,.row-3e, .row5, .grid, .row-4, .row4, .row3{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+.row-4{
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+.row-3{
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.row-3e{
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.row2{
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr ));
+}
+.row3{
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr ));
+}
+.row4{
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr ));
+}
+.row5{
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.row6 {
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+}
+/** grid **/
+/** grid-gap **/
+.gapp5{
+  gap: .5em;
+}
+.gapp8{
+  gap: .8em;
+}
+.gap1{
+  gap: 1em;
+}
+.gap2{
+  gap: 2em;
+}
+/** grid-gap **/
+/* maxwidth */
+.m-wd{
+  max-width: 1180px;
+}
+.m-760{
+max-width: 768px;
+}
+.m-full, .m-760, .m-wd{
+  width: 100%;
+}
+.w90{
+    width: 90%;
+}
+.w80{
+    width: 80%;
+}
+/** maxwidth **/
+.hfull{
+    height: 95vh;
+}
+/** border radius **/
+.br-circ{
+  border-radius: 8em;
+}
+.br-20{
+  border-radius: 20px;
+}
+.br-1{
+  border-radius: 1em;
+}
+/** border radius **/
+/* estilos borde */
+.bordeblanco{
+  border: 5px solid var(--fondoblanco);
+}
+/** BOTONES **/
+/** boton full */
+.btn-full, .btn-full-ol{
+  width: 100%;
+  height: 50px;
+}
+.btn-full{
+  background-color: var(--btnrojo);
+  color: var(--fondoblanco);
+}
+.btn-full-ol{
+  border: 3px solid ;
+  color: var(--btnrojo);
+  outline: none;
+}
+/** boton mitad **/
+.btn-md, .btn-md-ol{
+  width: 49%;
+  height: 50px;
+}
+.btn-md{
+  background-color: var(--amarillo);
+  color: var(--fondoblanco);
+}
+.btn-md-ol{
+  border: 3px solid;
+  color: var(--fondonegro);
+  outline: none;
+}
+/** boton fuill */
+/** height **/
+.h100{
+  height: 400px;
+}
+
+@media (min-width: 872px) {
+.row-3e{
+  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+}
+}
+
+/* opacidad */
+.opct20{
+    filter: opacity(20%);
+}
+.borderbt{
+    border-bottom: 1px solid var(--fondonegro);
+}

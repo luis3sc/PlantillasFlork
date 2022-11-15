@@ -1,0 +1,106 @@
+@import url(./css/colores.css);
+
+[type="checkbox"] {
+    display: none;
+  }
+  
+  [type="checkbox"]:checked + label::before {
+    background: var(--fondonegro);
+    transition: 0.5s;
+    transform: rotate(180deg);
+  }
+  
+  [type="checkbox"]:checked + label {
+    color: var(--fondonegro);
+  }
+  
+  /* ---- FORMULARIO ---- */
+  
+  .form {
+    /* border: 3px solid green; */
+    max-width: 400px;
+    margin-top: 10px;
+   
+  }
+  
+  .form-titulo {
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  
+  .form-input label {
+    display: block;
+    margin-top: 10px;
+    color: var(--fondonegro);
+  }
+  
+  .form-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid var(--fondonegro);
+    border-radius: 1em;
+    padding: .6em;
+  }
+  
+  .form-input input:focus + label {
+    font-weight: bold;
+    color: var(--fondonegro);
+  }
+  
+  .form-termsAndConditions {
+    margin-left: 20px;
+    position: relative;
+    color: var(--fondonegro);
+    font-size: 1em;
+  }
+  
+  .form-termsAndConditions label::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--fondonegro);
+    position: absolute;
+    left: -18px;
+  }
+  
+  .form-boton input {
+    color: var(--fondoblanco);
+    padding: 10px 50px;
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    border: none;
+  }
+  
+  .mensajeError {
+    color: var(--error);
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .mensajeCorrecto {
+    text-align: center;
+    font-weight: bold;
+  }
+  button, .button {
+    outline: none;
+    background: #ff0000;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+    padding: 1rem 1.8rem;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2;
+  /*    pointer-events: none; */
+  }
